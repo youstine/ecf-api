@@ -1,6 +1,6 @@
 # ECF-API
 
-## AUTHOR
+## AUTEUR/AUTHOR
 
 * Justine Moreau
 
@@ -19,29 +19,29 @@
 * Creating an API with symfony. 
 
 
-### PREREQUIS
+### PREREQUIS/REQUIREMENTS
 
 * Symfony 4.2.3
 * PHP 7.3 et dépendance (curl et zip)
 * composer
 
-### INSTALATION 
+### INSTALLATION 
 
 * Git clone https://github.com/youstine/ecf-api.git
-* Ouvrir un terminal dans le dossier cloné 
-* Taper la commande 
+* Ouvrir un terminal dans le dossier cloné/Open a terminal in the cloned folder
+* Taper la commande/type the command
 ``` 
 composer install 
 ```
-* Taper la commande 
+* Taper la commande/type the command
 ``` 
 php bin/console doctrine:database:create 
 ```
-* Taper la commande 
+* Taper la commande/type the command
 ```
 php bin/console make:migration
 ```
-* Taper la commande 
+* Taper la commande/type the command
 ```
 php bin/console doctrine:migration:migrate
 ```
