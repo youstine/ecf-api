@@ -17,3 +17,14 @@
 * Fictional project that aims to validate an ecf during training (PopSchool Lens).
 * Création d'une API avec symfony.
 * Creating an API with symfony. 
+
+
+### PREREQUIS
+
+* Symfony 4.2.3
+* PHP 7 
+
+### INSTALATION 
+
+* Étape 1 Git clone 
+* 
