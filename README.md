@@ -1,17 +1,17 @@
-#ECF-API
+# ECF-API
 
-##AUTHOR
+## AUTHOR
 
 * Justine Moreau
 
 
-##PARTICIPATION
+## PARTICIPATION
 
-* Sullyvan Delaby
+* Sullivan Delaby
 * Alexandre Briffaut
 
 
-##DESCRIPTION 
+## DESCRIPTION 
 
 * Projet fictif qui a pour but de valider un ecf en cours de formation (PopSchool Lens).
 * Fictional project that aims to validate an ecf during training (PopSchool Lens).
@@ -22,9 +22,28 @@
 ### PREREQUIS
 
 * Symfony 4.2.3
-* PHP 7 
+* PHP 7.3 et dépendance (curl et zip)
+* composer
 
 ### INSTALATION 
 
-* Étape 1 Git clone 
-* 
+* Git clone https://github.com/youstine/ecf-api.git
+* Ouvrir un terminal dans le dossier cloné 
+* Taper la commande 
+``` 
+composer install 
+```
+* Taper la commande 
+``` 
+php bin/console doctrine:database:create 
+```
+* Taper la commande 
+```
+php bin/console make:migration
+```
+* Taper la commande 
+```
+php bin/console doctrine:migration:migrate
+```
+
+
