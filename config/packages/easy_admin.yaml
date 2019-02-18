@@ -1,0 +1,29 @@
+#easy_admin:
+#    entities:
+#        # List the entity class name you want to manage
+#        - App\Entity\Product
+#        - App\Entity\Category
+#        - App\Entity\User
+
+# javiereguiluz/easyadmin-bundle
+easy_admin:
+    entities:
+        Student:
+            class: App\Entity\Student
+            list:
+                fields: ['firstname', 'lastname', 'response']
+            form:
+                fields:
+                    - 'firstname'
+                    - 'lastname'
+                    - 'response'
+        Resource:
+            class: App\Entity\Resource
+            list:
+                fields: ['soft', 'alcohol', 'food', { property: 'student.firstname', label: 'student' }]
+            form:
+                fields:
+                    - 'soft'
+                    - 'alcohol'
+                    - 'food'
+                    - { property: 'student', type: 'entity', type_options: { choice_label: 'firstname', multiple: true }}
